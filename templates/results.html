@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformed Images</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            color: #8A2BE2; /* Violet */
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Image Results */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .image-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .image-box h2 {
+            font-size: 1.6em;
+            color: #8A2BE2; /* Violet */
+            margin-bottom: 20px;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Back Button */
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-back {
+            background-color: #8A2BE2; /* Violet */
+            color: white;
+            font-size: 1.2em;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #7A1EB5; /* Darker Violet */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Transformed Images</h1>
+            <p>Here are the results after applying different transformations.</p>
+        </header>
+
+        <div class="image-container">
+            <div class="image-box">
+                <h2>Translated</h2>
+                <img src="/static/translated.jpg" alt="Translated Image">
+            </div>
+            <div class="image-box">
+                <h2>Scaled</h2>
+                <img src="/static/scaled.jpg" alt="Scaled Image">
+            </div>
+            <div class="image-box">
+                <h2>Rotated</h2>
+                <img src="/static/rotated.jpg" alt="Rotated Image">
+            </div>
+            <div class="image-box">
+                <h2>Sheared</h2>
+                <img src="/static/sheared.jpg" alt="Sheared Image">
+            </div>
+        </div>
+
+        <div class="back-button">
+            <a href="/" class="btn-back">Back to Upload</a>
+        </div>
+    </div>
+
+    
+</body>
+</html>
